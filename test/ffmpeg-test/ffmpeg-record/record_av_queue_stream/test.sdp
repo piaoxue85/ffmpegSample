@@ -1,0 +1,40 @@
+open_audio_capture
+audio sample_fmt=1 size=4 channel=2  sample_rate=48000 in_channel_layout=3
+open_video_capture
+camera width=640 height=480 
+open_output
+ost->frame alloc success fmt=0 w=640 h=480
+c->channel_layout=3 channel=2 c->sample_fmt=48000  c->sample_rate=1024 nb_samples=8
+init finish
+get pkt flush_pkt
+avcodec_receive_packet EAGAIN 
+video av_encode_frame Error.
+avcodec_receive_packet EAGAIN 
+video av_encode_frame Error.
+get pkt flush_pkt
+avcodec_receive_packet EAGAIN 
+audio av_encode_frame Error.
+videoThreadProc exit
+videoThreadProc exit
+exit while
+exit while
+avcodec_send_frame ERROR 
+exit while
+avcodec_send_frame ERROR 
+avcodec_receive_packet ERROR 
+audio av_encode_frame Error.
+exit while
+exit while
+avcodec_send_frame ERROR 
+exit while
+avcodec_send_frame ERROR 
+avcodec_receive_packet ERROR 
+video av_encode_frame Error.
+free audio
+free video
+free output
+free output video_st
+free output audio_st
+free output avio_closep
+free output oc
+free finish

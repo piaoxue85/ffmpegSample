@@ -1,0 +1,936 @@
+open_audio_capture
+audio sample_fmt=1 size=4 channel=2  sample_rate=48000 in_channel_layout=3
+open_video_capture
+camera width=640 height=480 
+open_output
+ost->frame alloc success fmt=0 w=640 h=480
+c->channel_layout=3 channel=2 c->sample_fmt=48000  c->sample_rate=1024 nb_samples=8
+init finish
+ frame_pts=1 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=1 
+get pkt flush_pkt
+ frame_pts=1 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=1 
+ frame_pts=1 audio_st->next_pts=0
+nb_packets 3 video_input.bCap=1 frame_pts=1 
+--------------video- pkt.pts=1
+pts:50 pts_time:0.05 dts:50 dts_time:0.05 duration:0 duration_time:0 stream_index:0
+ frame_pts=1 audio_st->next_pts=0
+nb_packets 7 video_input.bCap=1 frame_pts=1 
+--------------video- pkt.pts=2
+pts:100 pts_time:0.1 dts:100 dts_time:0.1 duration:0 duration_time:0 stream_index:0
+ frame_pts=2 audio_st->next_pts=0
+nb_packets 9 video_input.bCap=1 frame_pts=2 
+--------------video- pkt.pts=3
+pts:150 pts_time:0.15 dts:150 dts_time:0.15 duration:0 duration_time:0 stream_index:0
+ frame_pts=3 audio_st->next_pts=0
+nb_packets 10 video_input.bCap=1 frame_pts=3 
+--------------video- pkt.pts=4
+pts:200 pts_time:0.2 dts:200 dts_time:0.2 duration:0 duration_time:0 stream_index:0
+ frame_pts=4 audio_st->next_pts=0
+nb_packets 11 video_input.bCap=1 frame_pts=4 
+--------------video- pkt.pts=5
+pts:250 pts_time:0.25 dts:250 dts_time:0.25 duration:0 duration_time:0 stream_index:0
+ frame_pts=5 audio_st->next_pts=0
+nb_packets 12 video_input.bCap=1 frame_pts=5 
+--------------video- pkt.pts=6
+pts:300 pts_time:0.3 dts:300 dts_time:0.3 duration:0 duration_time:0 stream_index:0
+ frame_pts=6 audio_st->next_pts=0
+nb_packets 13 video_input.bCap=1 frame_pts=6 
+--------------video- pkt.pts=7
+pts:350 pts_time:0.35 dts:350 dts_time:0.35 duration:0 duration_time:0 stream_index:0
+ frame_pts=7 audio_st->next_pts=0
+nb_packets 14 video_input.bCap=1 frame_pts=7 
+--------------video- pkt.pts=8
+pts:400 pts_time:0.4 dts:400 dts_time:0.4 duration:0 duration_time:0 stream_index:0
+ frame_pts=8 audio_st->next_pts=0
+nb_packets 15 video_input.bCap=1 frame_pts=8 
+--------------video- pkt.pts=9
+pts:450 pts_time:0.45 dts:450 dts_time:0.45 duration:0 duration_time:0 stream_index:0
+ frame_pts=9 audio_st->next_pts=0
+nb_packets 16 video_input.bCap=1 frame_pts=9 
+--------------video- pkt.pts=10
+pts:500 pts_time:0.5 dts:500 dts_time:0.5 duration:0 duration_time:0 stream_index:0
+ frame_pts=10 audio_st->next_pts=0
+nb_packets 16 video_input.bCap=1 frame_pts=10 
+--------------video- pkt.pts=11
+pts:550 pts_time:0.55 dts:550 dts_time:0.55 duration:0 duration_time:0 stream_index:0
+ frame_pts=11 audio_st->next_pts=0
+nb_packets 17 video_input.bCap=1 frame_pts=11 
+--------------video- pkt.pts=12
+pts:600 pts_time:0.6 dts:600 dts_time:0.6 duration:0 duration_time:0 stream_index:0
+ frame_pts=12 audio_st->next_pts=0
+nb_packets 17 video_input.bCap=1 frame_pts=12 
+--------------video- pkt.pts=13
+pts:650 pts_time:0.65 dts:650 dts_time:0.65 duration:0 duration_time:0 stream_index:0
+ frame_pts=13 audio_st->next_pts=0
+nb_packets 17 video_input.bCap=1 frame_pts=13 
+--------------video- pkt.pts=14
+pts:700 pts_time:0.7 dts:700 dts_time:0.7 duration:0 duration_time:0 stream_index:0
+ frame_pts=14 audio_st->next_pts=0
+nb_packets 17 video_input.bCap=1 frame_pts=14 
+--------------video- pkt.pts=15
+pts:750 pts_time:0.75 dts:750 dts_time:0.75 duration:0 duration_time:0 stream_index:0
+ frame_pts=15 audio_st->next_pts=0
+nb_packets 18 video_input.bCap=1 frame_pts=15 
+--------------video- pkt.pts=16
+pts:800 pts_time:0.8 dts:800 dts_time:0.8 duration:0 duration_time:0 stream_index:0
+ frame_pts=16 audio_st->next_pts=0
+nb_packets 18 video_input.bCap=1 frame_pts=16 
+--------------video- pkt.pts=17
+pts:850 pts_time:0.85 dts:850 dts_time:0.85 duration:0 duration_time:0 stream_index:0
+ frame_pts=17 audio_st->next_pts=0
+nb_packets 18 video_input.bCap=1 frame_pts=17 
+--------------video- pkt.pts=18
+pts:900 pts_time:0.9 dts:900 dts_time:0.9 duration:0 duration_time:0 stream_index:0
+ frame_pts=18 audio_st->next_pts=0
+nb_packets 17 video_input.bCap=1 frame_pts=18 
+--------------video- pkt.pts=19
+pts:950 pts_time:0.95 dts:950 dts_time:0.95 duration:0 duration_time:0 stream_index:0
+ frame_pts=19 audio_st->next_pts=0
+nb_packets 18 video_input.bCap=1 frame_pts=19 
+--------------video- pkt.pts=20
+pts:1000 pts_time:1 dts:1000 dts_time:1 duration:0 duration_time:0 stream_index:0
+ frame_pts=20 audio_st->next_pts=0
+nb_packets 17 video_input.bCap=1 frame_pts=20 
+--------------video- pkt.pts=21
+pts:1050 pts_time:1.05 dts:1050 dts_time:1.05 duration:0 duration_time:0 stream_index:0
+ frame_pts=21 audio_st->next_pts=0
+nb_packets 17 video_input.bCap=1 frame_pts=21 
+--------------video- pkt.pts=22
+pts:1100 pts_time:1.1 dts:1100 dts_time:1.1 duration:0 duration_time:0 stream_index:0
+ frame_pts=22 audio_st->next_pts=0
+nb_packets 16 video_input.bCap=1 frame_pts=22 
+--------------video- pkt.pts=23
+pts:1150 pts_time:1.15 dts:1150 dts_time:1.15 duration:0 duration_time:0 stream_index:0
+ frame_pts=23 audio_st->next_pts=0
+nb_packets 15 video_input.bCap=1 frame_pts=23 
+--------------video- pkt.pts=24
+pts:1200 pts_time:1.2 dts:1200 dts_time:1.2 duration:0 duration_time:0 stream_index:0
+ frame_pts=24 audio_st->next_pts=0
+nb_packets 15 video_input.bCap=1 frame_pts=24 
+--------------video- pkt.pts=25
+pts:1250 pts_time:1.25 dts:1250 dts_time:1.25 duration:0 duration_time:0 stream_index:0
+ frame_pts=25 audio_st->next_pts=0
+nb_packets 14 video_input.bCap=1 frame_pts=25 
+--------------video- pkt.pts=26
+pts:1300 pts_time:1.3 dts:1300 dts_time:1.3 duration:0 duration_time:0 stream_index:0
+ frame_pts=26 audio_st->next_pts=0
+nb_packets 13 video_input.bCap=1 frame_pts=26 
+--------------video- pkt.pts=27
+pts:1350 pts_time:1.35 dts:1350 dts_time:1.35 duration:0 duration_time:0 stream_index:0
+ frame_pts=27 audio_st->next_pts=0
+nb_packets 13 video_input.bCap=1 frame_pts=27 
+--------------video- pkt.pts=28
+pts:1400 pts_time:1.4 dts:1400 dts_time:1.4 duration:0 duration_time:0 stream_index:0
+ frame_pts=28 audio_st->next_pts=0
+nb_packets 12 video_input.bCap=1 frame_pts=28 
+--------------video- pkt.pts=29
+pts:1450 pts_time:1.45 dts:1450 dts_time:1.45 duration:0 duration_time:0 stream_index:0
+ frame_pts=29 audio_st->next_pts=0
+nb_packets 12 video_input.bCap=1 frame_pts=29 
+--------------video- pkt.pts=30
+pts:1500 pts_time:1.5 dts:1500 dts_time:1.5 duration:0 duration_time:0 stream_index:0
+ frame_pts=30 audio_st->next_pts=0
+nb_packets 11 video_input.bCap=1 frame_pts=30 
+--------------video- pkt.pts=31
+pts:1550 pts_time:1.55 dts:1550 dts_time:1.55 duration:0 duration_time:0 stream_index:0
+ frame_pts=31 audio_st->next_pts=0
+nb_packets 10 video_input.bCap=1 frame_pts=31 
+--------------video- pkt.pts=32
+pts:1600 pts_time:1.6 dts:1600 dts_time:1.6 duration:0 duration_time:0 stream_index:0
+ frame_pts=32 audio_st->next_pts=0
+nb_packets 10 video_input.bCap=1 frame_pts=32 
+--------------video- pkt.pts=33
+pts:1650 pts_time:1.65 dts:1650 dts_time:1.65 duration:0 duration_time:0 stream_index:0
+ frame_pts=33 audio_st->next_pts=0
+nb_packets 9 video_input.bCap=1 frame_pts=33 
+--------------video- pkt.pts=34
+pts:1700 pts_time:1.7 dts:1700 dts_time:1.7 duration:0 duration_time:0 stream_index:0
+ frame_pts=34 audio_st->next_pts=0
+nb_packets 9 video_input.bCap=1 frame_pts=34 
+--------------video- pkt.pts=35
+pts:1750 pts_time:1.75 dts:1750 dts_time:1.75 duration:0 duration_time:0 stream_index:0
+ frame_pts=35 audio_st->next_pts=0
+nb_packets 8 video_input.bCap=1 frame_pts=35 
+--------------video- pkt.pts=36
+pts:1800 pts_time:1.8 dts:1800 dts_time:1.8 duration:0 duration_time:0 stream_index:0
+ frame_pts=36 audio_st->next_pts=0
+nb_packets 7 video_input.bCap=1 frame_pts=36 
+--------------video- pkt.pts=37
+pts:1850 pts_time:1.85 dts:1850 dts_time:1.85 duration:0 duration_time:0 stream_index:0
+ frame_pts=37 audio_st->next_pts=0
+nb_packets 7 video_input.bCap=1 frame_pts=37 
+--------------video- pkt.pts=38
+pts:1900 pts_time:1.9 dts:1900 dts_time:1.9 duration:0 duration_time:0 stream_index:0
+ frame_pts=38 audio_st->next_pts=0
+nb_packets 6 video_input.bCap=1 frame_pts=38 
+--------------video- pkt.pts=39
+pts:1950 pts_time:1.95 dts:1950 dts_time:1.95 duration:0 duration_time:0 stream_index:0
+ frame_pts=39 audio_st->next_pts=0
+nb_packets 6 video_input.bCap=1 frame_pts=39 
+--------------video- pkt.pts=40
+pts:2000 pts_time:2 dts:2000 dts_time:2 duration:0 duration_time:0 stream_index:0
+ frame_pts=40 audio_st->next_pts=0
+nb_packets 6 video_input.bCap=1 frame_pts=40 
+--------------video- pkt.pts=41
+pts:2050 pts_time:2.05 dts:2050 dts_time:2.05 duration:0 duration_time:0 stream_index:0
+ frame_pts=41 audio_st->next_pts=0
+nb_packets 5 video_input.bCap=1 frame_pts=41 
+--------------video- pkt.pts=42
+pts:2100 pts_time:2.1 dts:2100 dts_time:2.1 duration:0 duration_time:0 stream_index:0
+ frame_pts=42 audio_st->next_pts=0
+nb_packets 4 video_input.bCap=1 frame_pts=42 
+--------------video- pkt.pts=43
+pts:2150 pts_time:2.15 dts:2150 dts_time:2.15 duration:0 duration_time:0 stream_index:0
+ frame_pts=43 audio_st->next_pts=0
+nb_packets 4 video_input.bCap=1 frame_pts=43 
+--------------video- pkt.pts=44
+pts:2200 pts_time:2.2 dts:2200 dts_time:2.2 duration:0 duration_time:0 stream_index:0
+ frame_pts=44 audio_st->next_pts=0
+nb_packets 3 video_input.bCap=1 frame_pts=44 
+--------------video- pkt.pts=45
+pts:2250 pts_time:2.25 dts:2250 dts_time:2.25 duration:0 duration_time:0 stream_index:0
+ frame_pts=45 audio_st->next_pts=0
+nb_packets 3 video_input.bCap=1 frame_pts=45 
+--------------video- pkt.pts=46
+pts:2300 pts_time:2.3 dts:2300 dts_time:2.3 duration:0 duration_time:0 stream_index:0
+ frame_pts=46 audio_st->next_pts=0
+nb_packets 2 video_input.bCap=1 frame_pts=46 
+--------------video- pkt.pts=47
+pts:2350 pts_time:2.35 dts:2350 dts_time:2.35 duration:0 duration_time:0 stream_index:0
+ frame_pts=47 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=47 
+--------------video- pkt.pts=48
+pts:2400 pts_time:2.4 dts:2400 dts_time:2.4 duration:0 duration_time:0 stream_index:0
+ frame_pts=48 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=48 
+--------------video- pkt.pts=49
+pts:2450 pts_time:2.45 dts:2450 dts_time:2.45 duration:0 duration_time:0 stream_index:0
+ frame_pts=49 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=49 
+ frame_pts=49 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=49 
+--------------video- pkt.pts=50
+pts:2500 pts_time:2.5 dts:2500 dts_time:2.5 duration:0 duration_time:0 stream_index:0
+ frame_pts=50 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=50 
+ frame_pts=50 audio_st->next_pts=0
+nb_packets 2 video_input.bCap=1 frame_pts=50 
+--------------video- pkt.pts=51
+pts:2550 pts_time:2.55 dts:2550 dts_time:2.55 duration:0 duration_time:0 stream_index:0
+ frame_pts=51 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=51 
+--------------video- pkt.pts=52
+pts:2600 pts_time:2.6 dts:2600 dts_time:2.6 duration:0 duration_time:0 stream_index:0
+ frame_pts=52 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=52 
+ frame_pts=52 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=52 
+--------------video- pkt.pts=53
+pts:2650 pts_time:2.65 dts:2650 dts_time:2.65 duration:0 duration_time:0 stream_index:0
+ frame_pts=53 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=53 
+--------------video- pkt.pts=54
+pts:2700 pts_time:2.7 dts:2700 dts_time:2.7 duration:0 duration_time:0 stream_index:0
+ frame_pts=54 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=54 
+ frame_pts=54 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=54 
+--------------video- pkt.pts=55
+pts:2750 pts_time:2.75 dts:2750 dts_time:2.75 duration:0 duration_time:0 stream_index:0
+ frame_pts=55 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=55 
+--------------video- pkt.pts=56
+pts:2800 pts_time:2.8 dts:2800 dts_time:2.8 duration:0 duration_time:0 stream_index:0
+ frame_pts=56 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=56 
+ frame_pts=56 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=56 
+--------------video- pkt.pts=57
+pts:2850 pts_time:2.85 dts:2850 dts_time:2.85 duration:0 duration_time:0 stream_index:0
+ frame_pts=57 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=57 
+--------------video- pkt.pts=58
+pts:2900 pts_time:2.9 dts:2900 dts_time:2.9 duration:0 duration_time:0 stream_index:0
+ frame_pts=58 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=58 
+ frame_pts=58 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=58 
+--------------video- pkt.pts=59
+pts:2950 pts_time:2.95 dts:2950 dts_time:2.95 duration:0 duration_time:0 stream_index:0
+ frame_pts=59 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=59 
+--------------video- pkt.pts=60
+pts:3000 pts_time:3 dts:3000 dts_time:3 duration:0 duration_time:0 stream_index:0
+ frame_pts=60 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=60 
+ frame_pts=60 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=60 
+--------------video- pkt.pts=61
+pts:3050 pts_time:3.05 dts:3050 dts_time:3.05 duration:0 duration_time:0 stream_index:0
+ frame_pts=61 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=61 
+--------------video- pkt.pts=62
+pts:3100 pts_time:3.1 dts:3100 dts_time:3.1 duration:0 duration_time:0 stream_index:0
+ frame_pts=62 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=62 
+ frame_pts=62 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=62 
+--------------video- pkt.pts=63
+pts:3150 pts_time:3.15 dts:3150 dts_time:3.15 duration:0 duration_time:0 stream_index:0
+ frame_pts=63 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=63 
+ frame_pts=63 audio_st->next_pts=0
+nb_packets 2 video_input.bCap=1 frame_pts=63 
+--------------video- pkt.pts=64
+pts:3200 pts_time:3.2 dts:3200 dts_time:3.2 duration:0 duration_time:0 stream_index:0
+ frame_pts=64 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=64 
+--------------video- pkt.pts=65
+pts:3250 pts_time:3.25 dts:3250 dts_time:3.25 duration:0 duration_time:0 stream_index:0
+ frame_pts=65 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=65 
+ frame_pts=65 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=65 
+--------------video- pkt.pts=66
+pts:3300 pts_time:3.3 dts:3300 dts_time:3.3 duration:0 duration_time:0 stream_index:0
+ frame_pts=66 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=66 
+--------------video- pkt.pts=67
+pts:3350 pts_time:3.35 dts:3350 dts_time:3.35 duration:0 duration_time:0 stream_index:0
+ frame_pts=67 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=67 
+ frame_pts=67 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=67 
+--------------video- pkt.pts=68
+pts:3400 pts_time:3.4 dts:3400 dts_time:3.4 duration:0 duration_time:0 stream_index:0
+ frame_pts=68 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=68 
+--------------video- pkt.pts=69
+pts:3450 pts_time:3.45 dts:3450 dts_time:3.45 duration:0 duration_time:0 stream_index:0
+ frame_pts=69 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=69 
+ frame_pts=69 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=69 
+--------------video- pkt.pts=70
+pts:3500 pts_time:3.5 dts:3500 dts_time:3.5 duration:0 duration_time:0 stream_index:0
+ frame_pts=70 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=70 
+ frame_pts=70 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=70 
+--------------video- pkt.pts=71
+pts:3550 pts_time:3.55 dts:3550 dts_time:3.55 duration:0 duration_time:0 stream_index:0
+ frame_pts=71 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=71 
+--------------video- pkt.pts=72
+pts:3600 pts_time:3.6 dts:3600 dts_time:3.6 duration:0 duration_time:0 stream_index:0
+ frame_pts=72 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=72 
+ frame_pts=72 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=72 
+--------------video- pkt.pts=73
+pts:3650 pts_time:3.65 dts:3650 dts_time:3.65 duration:0 duration_time:0 stream_index:0
+ frame_pts=73 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=73 
+--------------video- pkt.pts=74
+pts:3700 pts_time:3.7 dts:3700 dts_time:3.7 duration:0 duration_time:0 stream_index:0
+ frame_pts=74 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=74 
+ frame_pts=74 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=74 
+--------------video- pkt.pts=75
+pts:3750 pts_time:3.75 dts:3750 dts_time:3.75 duration:0 duration_time:0 stream_index:0
+ frame_pts=75 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=75 
+--------------video- pkt.pts=76
+pts:3800 pts_time:3.8 dts:3800 dts_time:3.8 duration:0 duration_time:0 stream_index:0
+ frame_pts=76 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=76 
+ frame_pts=76 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=76 
+--------------video- pkt.pts=77
+pts:3850 pts_time:3.85 dts:3850 dts_time:3.85 duration:0 duration_time:0 stream_index:0
+ frame_pts=77 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=77 
+--------------video- pkt.pts=78
+pts:3900 pts_time:3.9 dts:3900 dts_time:3.9 duration:0 duration_time:0 stream_index:0
+ frame_pts=78 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=78 
+ frame_pts=78 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=78 
+--------------video- pkt.pts=79
+pts:3950 pts_time:3.95 dts:3950 dts_time:3.95 duration:0 duration_time:0 stream_index:0
+ frame_pts=79 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=79 
+--------------video- pkt.pts=80
+pts:4000 pts_time:4 dts:4000 dts_time:4 duration:0 duration_time:0 stream_index:0
+ frame_pts=80 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=80 
+ frame_pts=80 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=80 
+--------------video- pkt.pts=81
+pts:4050 pts_time:4.05 dts:4050 dts_time:4.05 duration:0 duration_time:0 stream_index:0
+ frame_pts=81 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=81 
+ frame_pts=81 audio_st->next_pts=0
+nb_packets 2 video_input.bCap=1 frame_pts=81 
+--------------video- pkt.pts=82
+pts:4100 pts_time:4.1 dts:4100 dts_time:4.1 duration:0 duration_time:0 stream_index:0
+ frame_pts=82 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=82 
+--------------video- pkt.pts=83
+pts:4150 pts_time:4.15 dts:4150 dts_time:4.15 duration:0 duration_time:0 stream_index:0
+ frame_pts=83 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=83 
+ frame_pts=83 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=83 
+--------------video- pkt.pts=84
+pts:4200 pts_time:4.2 dts:4200 dts_time:4.2 duration:0 duration_time:0 stream_index:0
+ frame_pts=84 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=84 
+--------------video- pkt.pts=85
+pts:4250 pts_time:4.25 dts:4250 dts_time:4.25 duration:0 duration_time:0 stream_index:0
+ frame_pts=85 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=85 
+--------------video- pkt.pts=86
+pts:4300 pts_time:4.3 dts:4300 dts_time:4.3 duration:0 duration_time:0 stream_index:0
+ frame_pts=86 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=86 
+ frame_pts=86 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=86 
+--------------video- pkt.pts=87
+pts:4350 pts_time:4.35 dts:4350 dts_time:4.35 duration:0 duration_time:0 stream_index:0
+ frame_pts=87 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=87 
+--------------video- pkt.pts=88
+pts:4400 pts_time:4.4 dts:4400 dts_time:4.4 duration:0 duration_time:0 stream_index:0
+ frame_pts=88 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=88 
+--------------video- pkt.pts=89
+pts:4450 pts_time:4.45 dts:4450 dts_time:4.45 duration:0 duration_time:0 stream_index:0
+ frame_pts=89 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=89 
+--------------video- pkt.pts=90
+pts:4500 pts_time:4.5 dts:4500 dts_time:4.5 duration:0 duration_time:0 stream_index:0
+ frame_pts=90 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=90 
+--------------video- pkt.pts=91
+pts:4550 pts_time:4.55 dts:4550 dts_time:4.55 duration:0 duration_time:0 stream_index:0
+ frame_pts=91 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=91 
+ frame_pts=91 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=91 
+--------------video- pkt.pts=92
+pts:4600 pts_time:4.6 dts:4600 dts_time:4.6 duration:0 duration_time:0 stream_index:0
+ frame_pts=92 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=92 
+--------------video- pkt.pts=93
+pts:4650 pts_time:4.65 dts:4650 dts_time:4.65 duration:0 duration_time:0 stream_index:0
+ frame_pts=93 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=93 
+--------------video- pkt.pts=94
+pts:4700 pts_time:4.7 dts:4700 dts_time:4.7 duration:0 duration_time:0 stream_index:0
+ frame_pts=94 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=94 
+--------------video- pkt.pts=95
+pts:4750 pts_time:4.75 dts:4750 dts_time:4.75 duration:0 duration_time:0 stream_index:0
+ frame_pts=95 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=95 
+ frame_pts=95 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=95 
+--------------video- pkt.pts=96
+pts:4800 pts_time:4.8 dts:4800 dts_time:4.8 duration:0 duration_time:0 stream_index:0
+ frame_pts=96 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=96 
+--------------video- pkt.pts=97
+pts:4850 pts_time:4.85 dts:4850 dts_time:4.85 duration:0 duration_time:0 stream_index:0
+ frame_pts=97 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=97 
+ frame_pts=97 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=97 
+--------------video- pkt.pts=98
+pts:4900 pts_time:4.9 dts:4900 dts_time:4.9 duration:0 duration_time:0 stream_index:0
+ frame_pts=98 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=98 
+--------------video- pkt.pts=99
+pts:4950 pts_time:4.95 dts:4950 dts_time:4.95 duration:0 duration_time:0 stream_index:0
+ frame_pts=99 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=99 
+ frame_pts=99 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=99 
+--------------video- pkt.pts=100
+pts:5000 pts_time:5 dts:5000 dts_time:5 duration:0 duration_time:0 stream_index:0
+ frame_pts=100 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=100 
+--------------video- pkt.pts=101
+pts:5050 pts_time:5.05 dts:5050 dts_time:5.05 duration:0 duration_time:0 stream_index:0
+ frame_pts=101 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=101 
+ frame_pts=101 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=101 
+--------------video- pkt.pts=102
+pts:5100 pts_time:5.1 dts:5100 dts_time:5.1 duration:0 duration_time:0 stream_index:0
+ frame_pts=102 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=102 
+ frame_pts=102 audio_st->next_pts=0
+nb_packets 2 video_input.bCap=1 frame_pts=102 
+--------------video- pkt.pts=103
+pts:5150 pts_time:5.15 dts:5150 dts_time:5.15 duration:0 duration_time:0 stream_index:0
+ frame_pts=103 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=103 
+--------------video- pkt.pts=104
+pts:5200 pts_time:5.2 dts:5200 dts_time:5.2 duration:0 duration_time:0 stream_index:0
+ frame_pts=104 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=104 
+ frame_pts=104 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=104 
+--------------video- pkt.pts=105
+pts:5250 pts_time:5.25 dts:5250 dts_time:5.25 duration:0 duration_time:0 stream_index:0
+ frame_pts=105 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=105 
+--------------video- pkt.pts=106
+pts:5300 pts_time:5.3 dts:5300 dts_time:5.3 duration:0 duration_time:0 stream_index:0
+ frame_pts=106 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=106 
+ frame_pts=106 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=106 
+--------------video- pkt.pts=107
+pts:5350 pts_time:5.35 dts:5350 dts_time:5.35 duration:0 duration_time:0 stream_index:0
+ frame_pts=107 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=107 
+--------------video- pkt.pts=108
+pts:5400 pts_time:5.4 dts:5400 dts_time:5.4 duration:0 duration_time:0 stream_index:0
+ frame_pts=108 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=108 
+ frame_pts=108 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=108 
+--------------video- pkt.pts=109
+pts:5450 pts_time:5.45 dts:5450 dts_time:5.45 duration:0 duration_time:0 stream_index:0
+ frame_pts=109 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=109 
+--------------video- pkt.pts=110
+pts:5500 pts_time:5.5 dts:5500 dts_time:5.5 duration:0 duration_time:0 stream_index:0
+ frame_pts=110 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=110 
+--------------video- pkt.pts=111
+pts:5550 pts_time:5.55 dts:5550 dts_time:5.55 duration:0 duration_time:0 stream_index:0
+ frame_pts=111 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=111 
+--------------video- pkt.pts=112
+pts:5600 pts_time:5.6 dts:5600 dts_time:5.6 duration:0 duration_time:0 stream_index:0
+ frame_pts=112 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=112 
+ frame_pts=112 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=112 
+--------------video- pkt.pts=113
+pts:5650 pts_time:5.65 dts:5650 dts_time:5.65 duration:0 duration_time:0 stream_index:0
+ frame_pts=113 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=113 
+--------------video- pkt.pts=114
+pts:5700 pts_time:5.7 dts:5700 dts_time:5.7 duration:0 duration_time:0 stream_index:0
+ frame_pts=114 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=114 
+ frame_pts=114 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=114 
+--------------video- pkt.pts=115
+pts:5750 pts_time:5.75 dts:5750 dts_time:5.75 duration:0 duration_time:0 stream_index:0
+ frame_pts=115 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=115 
+--------------video- pkt.pts=116
+pts:5800 pts_time:5.8 dts:5800 dts_time:5.8 duration:0 duration_time:0 stream_index:0
+ frame_pts=116 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=116 
+ frame_pts=116 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=116 
+--------------video- pkt.pts=117
+pts:5850 pts_time:5.85 dts:5850 dts_time:5.85 duration:0 duration_time:0 stream_index:0
+ frame_pts=117 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=117 
+ frame_pts=117 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=117 
+--------------video- pkt.pts=118
+pts:5900 pts_time:5.9 dts:5900 dts_time:5.9 duration:0 duration_time:0 stream_index:0
+ frame_pts=118 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=118 
+--------------video- pkt.pts=119
+pts:5950 pts_time:5.95 dts:5950 dts_time:5.95 duration:0 duration_time:0 stream_index:0
+ frame_pts=119 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=119 
+--------------video- pkt.pts=120
+pts:6000 pts_time:6 dts:6000 dts_time:6 duration:0 duration_time:0 stream_index:0
+ frame_pts=120 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=120 
+ frame_pts=120 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=120 
+--------------video- pkt.pts=121
+pts:6050 pts_time:6.05 dts:6050 dts_time:6.05 duration:0 duration_time:0 stream_index:0
+ frame_pts=121 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=121 
+--------------video- pkt.pts=122
+pts:6100 pts_time:6.1 dts:6100 dts_time:6.1 duration:0 duration_time:0 stream_index:0
+ frame_pts=122 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=122 
+ frame_pts=122 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=122 
+--------------video- pkt.pts=123
+pts:6150 pts_time:6.15 dts:6150 dts_time:6.15 duration:0 duration_time:0 stream_index:0
+ frame_pts=123 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=123 
+--------------video- pkt.pts=124
+pts:6200 pts_time:6.2 dts:6200 dts_time:6.2 duration:0 duration_time:0 stream_index:0
+ frame_pts=124 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=124 
+ frame_pts=124 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=124 
+--------------video- pkt.pts=125
+pts:6250 pts_time:6.25 dts:6250 dts_time:6.25 duration:0 duration_time:0 stream_index:0
+ frame_pts=125 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=125 
+--------------video- pkt.pts=126
+pts:6300 pts_time:6.3 dts:6300 dts_time:6.3 duration:0 duration_time:0 stream_index:0
+ frame_pts=126 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=126 
+ frame_pts=126 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=126 
+--------------video- pkt.pts=127
+pts:6350 pts_time:6.35 dts:6350 dts_time:6.35 duration:0 duration_time:0 stream_index:0
+ frame_pts=127 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=127 
+--------------video- pkt.pts=128
+pts:6400 pts_time:6.4 dts:6400 dts_time:6.4 duration:0 duration_time:0 stream_index:0
+ frame_pts=128 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=128 
+ frame_pts=128 audio_st->next_pts=0
+nb_packets 2 video_input.bCap=1 frame_pts=128 
+--------------video- pkt.pts=129
+pts:6450 pts_time:6.45 dts:6450 dts_time:6.45 duration:0 duration_time:0 stream_index:0
+ frame_pts=129 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=129 
+--------------video- pkt.pts=130
+pts:6500 pts_time:6.5 dts:6500 dts_time:6.5 duration:0 duration_time:0 stream_index:0
+ frame_pts=130 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=130 
+ frame_pts=130 audio_st->next_pts=0
+nb_packets 2 video_input.bCap=1 frame_pts=130 
+--------------video- pkt.pts=131
+pts:6550 pts_time:6.55 dts:6550 dts_time:6.55 duration:0 duration_time:0 stream_index:0
+ frame_pts=131 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=131 
+--------------video- pkt.pts=132
+pts:6600 pts_time:6.6 dts:6600 dts_time:6.6 duration:0 duration_time:0 stream_index:0
+ frame_pts=132 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=132 
+ frame_pts=132 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=132 
+--------------video- pkt.pts=133
+pts:6650 pts_time:6.65 dts:6650 dts_time:6.65 duration:0 duration_time:0 stream_index:0
+ frame_pts=133 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=133 
+--------------video- pkt.pts=134
+pts:6700 pts_time:6.7 dts:6700 dts_time:6.7 duration:0 duration_time:0 stream_index:0
+ frame_pts=134 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=134 
+ frame_pts=134 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=134 
+--------------video- pkt.pts=135
+pts:6750 pts_time:6.75 dts:6750 dts_time:6.75 duration:0 duration_time:0 stream_index:0
+ frame_pts=135 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=135 
+--------------video- pkt.pts=136
+pts:6800 pts_time:6.8 dts:6800 dts_time:6.8 duration:0 duration_time:0 stream_index:0
+ frame_pts=136 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=136 
+--------------video- pkt.pts=137
+pts:6850 pts_time:6.85 dts:6850 dts_time:6.85 duration:0 duration_time:0 stream_index:0
+ frame_pts=137 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=137 
+ frame_pts=137 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=137 
+--------------video- pkt.pts=138
+pts:6900 pts_time:6.9 dts:6900 dts_time:6.9 duration:0 duration_time:0 stream_index:0
+ frame_pts=138 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=138 
+ frame_pts=138 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=138 
+--------------video- pkt.pts=139
+pts:6950 pts_time:6.95 dts:6950 dts_time:6.95 duration:0 duration_time:0 stream_index:0
+ frame_pts=139 audio_st->next_pts=0
+nb_packets 2 video_input.bCap=1 frame_pts=139 
+--------------video- pkt.pts=140
+pts:7000 pts_time:7 dts:7000 dts_time:7 duration:0 duration_time:0 stream_index:0
+ frame_pts=140 audio_st->next_pts=0
+nb_packets 2 video_input.bCap=1 frame_pts=140 
+--------------video- pkt.pts=141
+pts:7050 pts_time:7.05 dts:7050 dts_time:7.05 duration:0 duration_time:0 stream_index:0
+ frame_pts=141 audio_st->next_pts=0
+nb_packets 2 video_input.bCap=1 frame_pts=141 
+--------------video- pkt.pts=142
+pts:7100 pts_time:7.1 dts:7100 dts_time:7.1 duration:0 duration_time:0 stream_index:0
+ frame_pts=142 audio_st->next_pts=0
+nb_packets 2 video_input.bCap=1 frame_pts=142 
+--------------video- pkt.pts=143
+pts:7150 pts_time:7.15 dts:7150 dts_time:7.15 duration:0 duration_time:0 stream_index:0
+ frame_pts=143 audio_st->next_pts=0
+nb_packets 3 video_input.bCap=1 frame_pts=143 
+--------------video- pkt.pts=144
+pts:7200 pts_time:7.2 dts:7200 dts_time:7.2 duration:0 duration_time:0 stream_index:0
+ frame_pts=144 audio_st->next_pts=0
+nb_packets 5 video_input.bCap=1 frame_pts=144 
+--------------video- pkt.pts=145
+pts:7250 pts_time:7.25 dts:7250 dts_time:7.25 duration:0 duration_time:0 stream_index:0
+ frame_pts=145 audio_st->next_pts=0
+nb_packets 5 video_input.bCap=1 frame_pts=145 
+--------------video- pkt.pts=146
+pts:7300 pts_time:7.3 dts:7300 dts_time:7.3 duration:0 duration_time:0 stream_index:0
+ frame_pts=146 audio_st->next_pts=0
+nb_packets 6 video_input.bCap=1 frame_pts=146 
+--------------video- pkt.pts=147
+pts:7350 pts_time:7.35 dts:7350 dts_time:7.35 duration:0 duration_time:0 stream_index:0
+ frame_pts=147 audio_st->next_pts=0
+nb_packets 6 video_input.bCap=1 frame_pts=147 
+--------------video- pkt.pts=148
+pts:7400 pts_time:7.4 dts:7400 dts_time:7.4 duration:0 duration_time:0 stream_index:0
+ frame_pts=148 audio_st->next_pts=0
+nb_packets 7 video_input.bCap=1 frame_pts=148 
+--------------video- pkt.pts=149
+pts:7450 pts_time:7.45 dts:7450 dts_time:7.45 duration:0 duration_time:0 stream_index:0
+ frame_pts=149 audio_st->next_pts=0
+nb_packets 7 video_input.bCap=1 frame_pts=149 
+--------------video- pkt.pts=150
+pts:7500 pts_time:7.5 dts:7500 dts_time:7.5 duration:0 duration_time:0 stream_index:0
+ frame_pts=150 audio_st->next_pts=0
+nb_packets 7 video_input.bCap=1 frame_pts=150 
+--------------video- pkt.pts=151
+pts:7550 pts_time:7.55 dts:7550 dts_time:7.55 duration:0 duration_time:0 stream_index:0
+ frame_pts=151 audio_st->next_pts=0
+nb_packets 8 video_input.bCap=1 frame_pts=151 
+--------------video- pkt.pts=152
+pts:7600 pts_time:7.6 dts:7600 dts_time:7.6 duration:0 duration_time:0 stream_index:0
+ frame_pts=152 audio_st->next_pts=0
+nb_packets 8 video_input.bCap=1 frame_pts=152 
+--------------video- pkt.pts=153
+pts:7650 pts_time:7.65 dts:7650 dts_time:7.65 duration:0 duration_time:0 stream_index:0
+ frame_pts=153 audio_st->next_pts=0
+nb_packets 8 video_input.bCap=1 frame_pts=153 
+--------------video- pkt.pts=154
+pts:7700 pts_time:7.7 dts:7700 dts_time:7.7 duration:0 duration_time:0 stream_index:0
+ frame_pts=154 audio_st->next_pts=0
+nb_packets 8 video_input.bCap=1 frame_pts=154 
+--------------video- pkt.pts=155
+pts:7750 pts_time:7.75 dts:7750 dts_time:7.75 duration:0 duration_time:0 stream_index:0
+ frame_pts=155 audio_st->next_pts=0
+nb_packets 8 video_input.bCap=1 frame_pts=155 
+--------------video- pkt.pts=156
+pts:7800 pts_time:7.8 dts:7800 dts_time:7.8 duration:0 duration_time:0 stream_index:0
+ frame_pts=156 audio_st->next_pts=0
+nb_packets 9 video_input.bCap=1 frame_pts=156 
+--------------video- pkt.pts=157
+pts:7850 pts_time:7.85 dts:7850 dts_time:7.85 duration:0 duration_time:0 stream_index:0
+ frame_pts=157 audio_st->next_pts=0
+nb_packets 9 video_input.bCap=1 frame_pts=157 
+--------------video- pkt.pts=158
+pts:7900 pts_time:7.9 dts:7900 dts_time:7.9 duration:0 duration_time:0 stream_index:0
+ frame_pts=158 audio_st->next_pts=0
+nb_packets 9 video_input.bCap=1 frame_pts=158 
+--------------video- pkt.pts=159
+pts:7950 pts_time:7.95 dts:7950 dts_time:7.95 duration:0 duration_time:0 stream_index:0
+ frame_pts=159 audio_st->next_pts=0
+nb_packets 8 video_input.bCap=1 frame_pts=159 
+--------------video- pkt.pts=160
+pts:8000 pts_time:8 dts:8000 dts_time:8 duration:0 duration_time:0 stream_index:0
+ frame_pts=160 audio_st->next_pts=0
+nb_packets 8 video_input.bCap=1 frame_pts=160 
+--------------video- pkt.pts=161
+pts:8050 pts_time:8.05 dts:8050 dts_time:8.05 duration:0 duration_time:0 stream_index:0
+ frame_pts=161 audio_st->next_pts=0
+nb_packets 8 video_input.bCap=1 frame_pts=161 
+--------------video- pkt.pts=162
+pts:8100 pts_time:8.1 dts:8100 dts_time:8.1 duration:0 duration_time:0 stream_index:0
+ frame_pts=162 audio_st->next_pts=0
+nb_packets 8 video_input.bCap=1 frame_pts=162 
+--------------video- pkt.pts=163
+pts:8150 pts_time:8.15 dts:8150 dts_time:8.15 duration:0 duration_time:0 stream_index:0
+ frame_pts=163 audio_st->next_pts=0
+nb_packets 7 video_input.bCap=1 frame_pts=163 
+--------------video- pkt.pts=164
+pts:8200 pts_time:8.2 dts:8200 dts_time:8.2 duration:0 duration_time:0 stream_index:0
+ frame_pts=164 audio_st->next_pts=0
+nb_packets 8 video_input.bCap=1 frame_pts=164 
+--------------video- pkt.pts=165
+pts:8250 pts_time:8.25 dts:8250 dts_time:8.25 duration:0 duration_time:0 stream_index:0
+ frame_pts=165 audio_st->next_pts=0
+nb_packets 7 video_input.bCap=1 frame_pts=165 
+--------------video- pkt.pts=166
+pts:8300 pts_time:8.3 dts:8300 dts_time:8.3 duration:0 duration_time:0 stream_index:0
+ frame_pts=166 audio_st->next_pts=0
+nb_packets 7 video_input.bCap=1 frame_pts=166 
+--------------video- pkt.pts=167
+pts:8350 pts_time:8.35 dts:8350 dts_time:8.35 duration:0 duration_time:0 stream_index:0
+ frame_pts=167 audio_st->next_pts=0
+nb_packets 6 video_input.bCap=1 frame_pts=167 
+--------------video- pkt.pts=168
+pts:8400 pts_time:8.4 dts:8400 dts_time:8.4 duration:0 duration_time:0 stream_index:0
+ frame_pts=168 audio_st->next_pts=0
+nb_packets 6 video_input.bCap=1 frame_pts=168 
+--------------video- pkt.pts=169
+pts:8450 pts_time:8.45 dts:8450 dts_time:8.45 duration:0 duration_time:0 stream_index:0
+ frame_pts=169 audio_st->next_pts=0
+nb_packets 5 video_input.bCap=1 frame_pts=169 
+--------------video- pkt.pts=170
+pts:8500 pts_time:8.5 dts:8500 dts_time:8.5 duration:0 duration_time:0 stream_index:0
+ frame_pts=170 audio_st->next_pts=0
+nb_packets 5 video_input.bCap=1 frame_pts=170 
+--------------video- pkt.pts=171
+pts:8550 pts_time:8.55 dts:8550 dts_time:8.55 duration:0 duration_time:0 stream_index:0
+ frame_pts=171 audio_st->next_pts=0
+nb_packets 4 video_input.bCap=1 frame_pts=171 
+--------------video- pkt.pts=172
+pts:8600 pts_time:8.6 dts:8600 dts_time:8.6 duration:0 duration_time:0 stream_index:0
+ frame_pts=172 audio_st->next_pts=0
+nb_packets 3 video_input.bCap=1 frame_pts=172 
+--------------video- pkt.pts=173
+pts:8650 pts_time:8.65 dts:8650 dts_time:8.65 duration:0 duration_time:0 stream_index:0
+ frame_pts=173 audio_st->next_pts=0
+nb_packets 3 video_input.bCap=1 frame_pts=173 
+--------------video- pkt.pts=174
+pts:8700 pts_time:8.7 dts:8700 dts_time:8.7 duration:0 duration_time:0 stream_index:0
+ frame_pts=174 audio_st->next_pts=0
+nb_packets 2 video_input.bCap=1 frame_pts=174 
+--------------video- pkt.pts=175
+pts:8750 pts_time:8.75 dts:8750 dts_time:8.75 duration:0 duration_time:0 stream_index:0
+ frame_pts=175 audio_st->next_pts=0
+nb_packets 2 video_input.bCap=1 frame_pts=175 
+--------------video- pkt.pts=176
+pts:8800 pts_time:8.8 dts:8800 dts_time:8.8 duration:0 duration_time:0 stream_index:0
+ frame_pts=176 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=176 
+--------------video- pkt.pts=177
+pts:8850 pts_time:8.85 dts:8850 dts_time:8.85 duration:0 duration_time:0 stream_index:0
+ frame_pts=177 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=177 
+--------------video- pkt.pts=178
+pts:8900 pts_time:8.9 dts:8900 dts_time:8.9 duration:0 duration_time:0 stream_index:0
+ frame_pts=178 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=178 
+ frame_pts=178 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=178 
+--------------video- pkt.pts=179
+pts:8950 pts_time:8.95 dts:8950 dts_time:8.95 duration:0 duration_time:0 stream_index:0
+ frame_pts=179 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=179 
+--------------video- pkt.pts=180
+pts:9000 pts_time:9 dts:9000 dts_time:9 duration:0 duration_time:0 stream_index:0
+ frame_pts=180 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=180 
+ frame_pts=180 audio_st->next_pts=0
+nb_packets 2 video_input.bCap=1 frame_pts=180 
+--------------video- pkt.pts=181
+pts:9050 pts_time:9.05 dts:9050 dts_time:9.05 duration:0 duration_time:0 stream_index:0
+ frame_pts=181 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=181 
+--------------video- pkt.pts=182
+pts:9100 pts_time:9.1 dts:9100 dts_time:9.1 duration:0 duration_time:0 stream_index:0
+ frame_pts=182 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=182 
+--------------video- pkt.pts=183
+pts:9150 pts_time:9.15 dts:9150 dts_time:9.15 duration:0 duration_time:0 stream_index:0
+ frame_pts=183 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=183 
+ frame_pts=183 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=183 
+--------------video- pkt.pts=184
+pts:9200 pts_time:9.2 dts:9200 dts_time:9.2 duration:0 duration_time:0 stream_index:0
+ frame_pts=184 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=184 
+--------------video- pkt.pts=185
+pts:9250 pts_time:9.25 dts:9250 dts_time:9.25 duration:0 duration_time:0 stream_index:0
+ frame_pts=185 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=185 
+ frame_pts=185 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=185 
+--------------video- pkt.pts=186
+pts:9300 pts_time:9.3 dts:9300 dts_time:9.3 duration:0 duration_time:0 stream_index:0
+ frame_pts=186 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=186 
+--------------video- pkt.pts=187
+pts:9350 pts_time:9.35 dts:9350 dts_time:9.35 duration:0 duration_time:0 stream_index:0
+ frame_pts=187 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=187 
+ frame_pts=187 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=187 
+--------------video- pkt.pts=188
+pts:9400 pts_time:9.4 dts:9400 dts_time:9.4 duration:0 duration_time:0 stream_index:0
+ frame_pts=188 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=188 
+--------------video- pkt.pts=189
+pts:9450 pts_time:9.45 dts:9450 dts_time:9.45 duration:0 duration_time:0 stream_index:0
+ frame_pts=189 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=189 
+ frame_pts=189 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=189 
+--------------video- pkt.pts=190
+pts:9500 pts_time:9.5 dts:9500 dts_time:9.5 duration:0 duration_time:0 stream_index:0
+ frame_pts=190 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=190 
+--------------video- pkt.pts=191
+pts:9550 pts_time:9.55 dts:9550 dts_time:9.55 duration:0 duration_time:0 stream_index:0
+ frame_pts=191 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=191 
+ frame_pts=191 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=191 
+--------------video- pkt.pts=192
+pts:9600 pts_time:9.6 dts:9600 dts_time:9.6 duration:0 duration_time:0 stream_index:0
+ frame_pts=192 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=192 
+ frame_pts=192 audio_st->next_pts=0
+nb_packets 2 video_input.bCap=1 frame_pts=192 
+--------------video- pkt.pts=193
+pts:9650 pts_time:9.65 dts:9650 dts_time:9.65 duration:0 duration_time:0 stream_index:0
+ frame_pts=193 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=193 
+--------------video- pkt.pts=194
+pts:9700 pts_time:9.7 dts:9700 dts_time:9.7 duration:0 duration_time:0 stream_index:0
+ frame_pts=194 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=194 
+ frame_pts=194 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=194 
+--------------video- pkt.pts=195
+pts:9750 pts_time:9.75 dts:9750 dts_time:9.75 duration:0 duration_time:0 stream_index:0
+ frame_pts=195 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=195 
+--------------video- pkt.pts=196
+pts:9800 pts_time:9.8 dts:9800 dts_time:9.8 duration:0 duration_time:0 stream_index:0
+ frame_pts=196 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=196 
+ frame_pts=196 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=196 
+--------------video- pkt.pts=197
+pts:9850 pts_time:9.85 dts:9850 dts_time:9.85 duration:0 duration_time:0 stream_index:0
+ frame_pts=197 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=197 
+--------------video- pkt.pts=198
+pts:9900 pts_time:9.9 dts:9900 dts_time:9.9 duration:0 duration_time:0 stream_index:0
+ frame_pts=198 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=1 frame_pts=198 
+ frame_pts=198 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=1 frame_pts=198 
+videoThreadProc exit
+--------------video- pkt.pts=199
+pts:9950 pts_time:9.95 dts:9950 dts_time:9.95 duration:0 duration_time:0 stream_index:0
+ frame_pts=199 audio_st->next_pts=0
+nb_packets 1 video_input.bCap=0 frame_pts=199 
+--------------video- pkt.pts=200
+pts:10000 pts_time:10 dts:10000 dts_time:10 duration:0 duration_time:0 stream_index:0
+ frame_pts=200 audio_st->next_pts=0
+nb_packets 0 video_input.bCap=0 frame_pts=200 
+exit while
+--------------video- pkt.pts=NOPTS
+free audio
+free video
+free output
+free output video_st
+free output audio_st
+free output avio_closep
+free output oc
+free finish
